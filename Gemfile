@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'will_paginate'
 gem 'therubyracer'
 gem 'less-rails'
-gem 'mysql2'
 gem 'google-analytics-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -37,6 +36,8 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'slim'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

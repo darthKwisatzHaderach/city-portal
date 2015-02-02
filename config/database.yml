@@ -4,14 +4,12 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  adapter: mysql2
-  database: u31112_zar_city
-  port: 3306
+  adapter: sqlite3
+  database: db/city-portal.sqlite3 
   pool: 5
   timeout: 5000
-  username: root
-  password: '@WSXzaq1'
-  socket: /tmp/mysql.sock
+  username: user
+  password: city-portal  
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
