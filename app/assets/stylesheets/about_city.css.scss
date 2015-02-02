@@ -1,0 +1,112 @@
+.pic {
+	border: 10px solid #fff;  
+	float: left;
+	height: 290px;
+	width: 290px;
+	margin: 10px;
+	overflow: hidden;
+
+//	-webkit-box-shadow: 3px 3px 3px #555;
+//			box-shadow: 3px 3px 3px #555;  
+}
+
+.grow img {
+	height: 290px;
+	width: 290px;
+	max-width: none;
+
+	-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		transition: all 1s ease;
+}
+ 
+.grow img:hover {
+	height: 350px;
+	width: 350px;  
+	max-width: none;
+}
+
+.history_layer {
+	background: rgba(30, 30, 30, 0.7);
+}
+
+.history_layer_white {
+	background: rgba(255, 255, 255, 0.8);
+}
+
+@media all and (max-width: 1920px) { 
+	.history { background: url(../img/background_4_4_1920.jpg); }
+	.parallax#baes_1 { background-image: url(../img/baes_1_1920.jpg); background-size: cover; background-repeat: no-repeat; height: 700px; } 
+	.parallax#baes_2 { background-image: url(../img/baes_2_1920.jpg); background-size: cover; background-repeat: no-repeat; height: 500px; } 
+	.parallax#baes_3 { background-image: url(../img/baes_3_1920.jpg); background-size: cover; background-repeat: no-repeat; height: 500px; } 
+	.parallax#baes_4 { background-image: url(../img/baes_4_1920.jpg); background-size: cover; background-repeat: no-repeat; height: 400px; } 
+}
+@media all and (max-width: 1680px) and (min-width: 1600px) { 
+	.history { background: url(../img/background_4_4_1680.jpg); }
+	.parallax#baes_1 { background-image: url(../img/baes_1_1680.jpg); background-size: cover; background-repeat: no-repeat; height: 600px; } 
+	.parallax#baes_2 { background-image: url(../img/baes_2_1680.jpg); background-size: cover; background-repeat: no-repeat; height: 500px; } 
+	.parallax#baes_3 { background-image: url(../img/baes_3_1680.jpg); background-size: cover; background-repeat: no-repeat; height: 500px; } 
+	.parallax#baes_4 { background-image: url(../img/baes_4_1680.jpg); background-size: cover; background-repeat: no-repeat; height: 400px; }
+}
+@media all and (max-width: 1600px) and (min-width: 1366px) { 
+	.history { background: url(../img/background_4_4_1600.jpg); }  
+	.parallax#baes_1 { background-image: url(../img/baes_1_1600.jpg); background-size: cover; background-repeat: no-repeat; height: 600px; } 
+	.parallax#baes_2 { background-image: url(../img/baes_2_1600.jpg); background-size: cover; background-repeat: no-repeat; height: 500px; } 
+	.parallax#baes_3 { background-image: url(../img/baes_3_1600.jpg); background-size: cover; background-repeat: no-repeat; height: 500px; } 
+	.parallax#baes_4 { background-image: url(../img/baes_4_1600.jpg); background-size: cover; background-repeat: no-repeat; height: 400px; }
+}
+@media all and (max-width: 1366px) and (min-width: 1280px) { 
+	.history { background: url(../img/background_4_4_1366.jpg); }
+	.parallax#baes_1 { background-image: url(../img/baes_1_1366.jpg); background-size: cover; background-repeat: no-repeat; height: 600px; } 
+	.parallax#baes_2 { background-image: url(../img/baes_2_1366.jpg); background-size: cover; background-repeat: no-repeat; height: 500px; } 
+	.parallax#baes_3 { background-image: url(../img/baes_3_1366.jpg); background-size: cover; background-repeat: no-repeat; height: 500px; } 
+	.parallax#baes_4 { background-image: url(../img/baes_4_1366.jpg); background-size: cover; background-repeat: no-repeat; height: 400px; }
+}
+@media all and (max-width: 1280px) and (min-width: 1024px) { 
+	.history { background: url(../img/background_4_4_1280.jpg); }
+	.parallax#baes_1 { background-image: url(../img/baes_1_1280.jpg); background-size: cover; background-repeat: no-repeat; height: 600px; } 
+	.parallax#baes_2 { background-image: url(../img/baes_2_1280.jpg); background-size: cover; background-repeat: no-repeat; height: 500px; } 
+	.parallax#baes_3 { background-image: url(../img/baes_3_1280.jpg); background-size: cover; background-repeat: no-repeat; height: 500px; } 
+	.parallax#baes_4 { background-image: url(../img/baes_4_1280.jpg); background-size: cover; background-repeat: no-repeat; height: 400px; }
+}
+@media all and (max-width: 1024px) and (min-width: 800px) { 
+	.history { background: url(../img/background_4_4_1024.jpg); }
+	.parallax#baes_1 { background-image: url(../img/baes_1_1024.jpg); background-size: cover; background-repeat: no-repeat; height: 400px; } 
+	.parallax#baes_2 { background-image: url(../img/baes_2_1024.jpg); background-size: cover; background-repeat: no-repeat; height: 300px; } 
+	.parallax#baes_3 { background-image: url(../img/baes_3_1024.jpg); background-size: cover; background-repeat: no-repeat; height: 300px; } 
+	.parallax#baes_4 { background-image: url(../img/baes_4_1024.jpg); background-size: cover; background-repeat: no-repeat; height: 300px; }
+}
+@media all and (max-width: 800px) and (min-width: 768px) { 
+	.history { background: url(../img/background_4_4_800.jpg); }
+	.parallax#baes_1 { background-image: url(../img/baes_1_800.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; } 
+	.parallax#baes_2 { background-image: url(../img/baes_2_800.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; } 
+	.parallax#baes_3 { background-image: url(../img/baes_3_800.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; } 
+	.parallax#baes_4 { background-image: url(../img/baes_4_800.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; }
+}
+@media all and (max-width: 768px) and (min-width: 640px) { 
+	.history { background: url(../img/background_4_4_768.jpg); }
+	.parallax#baes_1 { background-image: url(../img/baes_1_768.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; } 
+	.parallax#baes_2 { background-image: url(../img/baes_2_768.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; } 
+	.parallax#baes_3 { background-image: url(../img/baes_3_768.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; } 
+	.parallax#baes_4 { background-image: url(../img/baes_4_768.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; }
+}
+@media all and (max-width: 640px) and (min-width: 480px) { 
+	.history { background: url(../img/background_4_4_640.jpg); }
+	.parallax#baes_1 { background-image: url(../img/baes_1_640.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; } 
+	.parallax#baes_2 { background-image: url(../img/baes_2_640.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; } 
+	.parallax#baes_3 { background-image: url(../img/baes_3_640.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; } 
+	.parallax#baes_4 { background-image: url(../img/baes_4_640.jpg); background-size: cover; background-repeat: no-repeat; height: 200px; }
+}
+@media all and (max-width: 480px) and (min-width: 320px){ 
+	.history { background: url(../img/background_4_4_480.jpg); }
+	.parallax#baes_1 { background-image: url(../img/baes_1_480.jpg); background-size: cover; background-repeat: no-repeat; height: 120px; } 
+	.parallax#baes_2 { background-image: url(../img/baes_2_480.jpg); background-size: cover; background-repeat: no-repeat; height: 120px; } 
+	.parallax#baes_3 { background-image: url(../img/baes_3_480.jpg); background-size: cover; background-repeat: no-repeat; height: 120px; } 
+	.parallax#baes_4 { background-image: url(../img/baes_4_480.jpg); background-size: cover; background-repeat: no-repeat; height: 120px; }
+}
+
+@media all and (max-width: 320px) { 
+	.history { background: url(../img/background_4_4_480.jpg); }
+}

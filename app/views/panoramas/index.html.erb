@@ -1,0 +1,48 @@
+<div style="padding-top: 60px;"></div>
+<div class="pano_layer">
+	<div class="pano_black_layer">
+		<div class="row">
+			<h3 style="color: #fff;">2014</h3>
+			<% @panoramas_2014.each do |panorama| %>
+			<div class="pano_grow pano_pic">
+				<a href="/panoramas/<%= panorama.path %>">
+		        	<img src="<%= panorama.img_path %>">        	
+		    	</a>
+			</div>		
+		<% end %>	
+		</div>				
+
+		<div class="row">
+			<h3 style="color: #fff;">2013</h3>
+			<% @panoramas_2013.each do |panorama| %>
+			<div class="pano_grow pano_pic">
+				<a href="/panoramas/<%= panorama.path %>">
+		        	<img src="<%= panorama.img_path %>">        	
+		    	</a>
+			</div>		
+		<% end %>	
+		</div>
+
+		<div class="row">
+			<h3 style="color: #fff;">2012</h3>
+			<% @panoramas_2012.each do |panorama| %>
+			<div class="pano_grow pano_pic">
+				<a href="/panoramas/<%= panorama.path %>">
+		        	<img src="<%= panorama.img_path %>">        	
+		    	</a>
+			</div>		
+		<% end %>	
+		</div>
+
+		<div class="row">
+			<h3 style="color: #fff;">2011</h3>
+			<% @panoramas_2011.each do |panorama| %>
+			<div class="pano_grow pano_pic">
+				<a href="/panoramas/<%= panorama.path %>">
+		        	<img src="<%= panorama.img_path %>">        	
+		    	</a>
+			</div>		
+		<% end %>	
+		</div>
+	</div>
+</div>

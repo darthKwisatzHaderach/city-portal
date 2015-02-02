@@ -1,0 +1,38 @@
+<div class="row" style="padding-top: 80px; padding-bottom: 20px; min-height: 900px;">	
+	<div class="three columns">
+	    <nav id="sidebar-nav-holder" class="vertical-nav">
+	      	<ul id="sidebar-nav">
+				<li><%= link_to 'Город Заречный и соседи', about_city_path %></li>
+				<li><%= link_to 'Градообразующие предприятия', companies_path %></li>
+				<li><%= link_to 'БН-800', baes_path %></li>
+				<li><%= link_to 'Образовательные учреждения', schools_path %></li>
+				<li><%= link_to 'МСЧ-32', msch_path %></li>
+				<li><%= link_to 'Клубы', clubs_path %></li>
+				<li><%= link_to 'Карнавал', karnaval_path %></li>
+				<li><%= link_to 'Достопримечательности', attractions_path %></li>
+				<li><%= link_to 'Телецентр', telecenter_path %></li>
+				<li class="active"><%= link_to 'Люди', lyudi_path %></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="nine columns">
+		<% @about_city_articles.each do |article| %>
+			<div class="media">
+				<h4 class="media-heading"><%= article.title %></h4>
+				<a class="pull-left" href="#">
+					<div class="thumbnail">
+						<%= image_tag "#{article.image}" %>
+					</div>
+				</a>
+				<div align="justify" class="media-body">
+					<%= simple_format(article.intro_text) %>
+				</div>
+			</div>
+			<div class="row">
+				<div class="medium primary btn squared" style="float:right;"><%= link_to "Подробнее...", "/attractions/#{article.alias}"%></div>			
+			</div>				
+			<% end %>
+		</div>
+	</div>
+</div>

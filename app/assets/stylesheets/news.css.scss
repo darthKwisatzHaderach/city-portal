@@ -1,0 +1,28 @@
+.thumbnails { margin-left: -20px; list-style: none; *zoom: 1; }
+.thumbnails:before,
+.thumbnails:after { display: table; line-height: 0; content: ""; }
+.thumbnails:after { clear: both; }
+.row-fluid .thumbnails { margin-left: 0; }
+.thumbnails > li { float: left; margin-bottom: 20px; margin-left: 20px; }
+.thumbnail { display: block; padding: 4px; line-height: 20px; border: 1px solid #ddd; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055); -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+a.thumbnail:hover,
+a.thumbnail:focus { border-color: #0088cc; -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25); -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25); box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25); }
+.thumbnail > img { display: block; max-width: 100%; margin-right: auto; margin-left: auto; }
+.thumbnail .caption { padding: 9px; color: #555555; }
+.media,
+.media-body { overflow: hidden; overflow: visible; zoom: 1; }
+.media, 
+.media .media { margin-top: 15px; }
+.media:first-child { margin-top: 0; }
+.media-object { display: block; }
+.media-heading { margin: 0 0 5px; }
+.media > .pull-left { margin-right: 10px; }
+.media > .pull-right { margin-left: 10px; }
+.media-list { margin-left: 0; }
+.pull-left { float: left; }
+.apple_pagination { text-align: center; padding: 1em; cursor: default; }
+.apple_pagination a, .apple_pagination span { padding: 0.2em 0.3em; }
+.apple_pagination .disabled { color: #aaaaaa; }
+.apple_pagination .current { font-style: normal; font-weight: bold; background-color: #bebebe; display: inline-block; width: 1.4em; height: 1.4em; line-height: 1.5; -moz-border-radius: 1em; -webkit-border-radius: 1em; border-radius: 1em; text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
+.apple_pagination a { text-decoration: none; color: black; }
+.apple_pagination a:hover, .apple_pagination a:focus { text-decoration: underline; }

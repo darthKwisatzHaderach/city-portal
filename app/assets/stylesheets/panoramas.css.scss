@@ -1,0 +1,35 @@
+.pano_pic {
+	border: 5px solid #fff;  
+	float: left;
+	height: 150px;
+	width: 150px;
+	margin: 3px;
+	overflow: hidden;
+
+	-webkit-box-shadow: 3px 3px 3px #555;
+			box-shadow: 3px 3px 3px #555;  
+}
+
+.pano_grow img {
+	height: 150px;
+	width: 150px;
+	max-width: none;
+
+	-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		transition: all 1s ease;
+}
+ 
+.pano_grow img:hover {
+	height: 200px;
+	width: 200px;  
+	max-width: none;
+}
+
+.pano_layer { background: url(../img/1_1.jpg); background-size: cover; background-repeat: no-repeat;}
+.pano_black_layer { background: rgba(30, 30, 30, 0.5);}
+.pano_black_layer1 { background: rgba(30, 30, 30, 0.9);}
+
+.swf_object { width: 1024px; height: 768px; }
