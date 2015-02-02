@@ -7,7 +7,7 @@ div class="row" style="padding-top: 80px; min-height: 900px;"
 			  = article.title 
 			  |&nbsp&nbsp
 			  li class="default label"
-			  = article.updated_at.to_date
+			    = article.created.to_date
 			a class="pull-left" href="#"
 				div class="thumbnail"
 					= image_tag "#{article.image}", :style => "max-width: 200px;"				
