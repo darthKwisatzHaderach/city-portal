@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150202073426) do
+ActiveRecord::Schema.define(version: 20150202075400) do
+
+  create_table "galleries", force: true do |t|
+    t.text    "controller"
+    t.integer "item_id"
+    t.integer "group"
+    t.string  "file"
+    t.string  "author"
+  end
 
   create_table "panoramas", force: true do |t|
     t.string  "path"
