@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150202075400) do
+ActiveRecord::Schema.define(version: 20150202082929) do
+
+  create_table "about_city_articles", force: true do |t|
+    t.string  "title"
+    t.string  "alias"
+    t.text    "intro_text"
+    t.text    "full_text"
+    t.integer "group_id"
+    t.string  "image"
+    t.string  "author"
+    t.boolean "published"
+  end
+
+  create_table "about_city_groups", force: true do |t|
+    t.string "name"
+  end
 
   create_table "galleries", force: true do |t|
     t.text    "controller"
@@ -19,6 +34,17 @@ ActiveRecord::Schema.define(version: 20150202075400) do
     t.integer "group"
     t.string  "file"
     t.string  "author"
+  end
+
+  create_table "news", force: true do |t|
+    t.string   "title"
+    t.string   "alias"
+    t.text     "intro_text"
+    t.text     "full_text"
+    t.string   "image"
+    t.string   "author"
+    t.boolean  "published"
+    t.datetime "created"
   end
 
   create_table "panoramas", force: true do |t|
