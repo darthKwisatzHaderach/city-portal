@@ -1,0 +1,11 @@
+div class="row" style="padding-top: 80px; padding-bottom: 20px; min-height: 900px;"
+	div class="twelve columns"
+		div class="media"
+			h4 align="center" class="media-heading"
+			  = @one_article.title
+			a class="pull-left" href="#"
+				div class="thumbnail"
+					= image_tag "#{@one_article.image}"				
+			div align="justify" class="media-body" style="margin-bottom: 30px"
+				= simple_format(@one_article.full_text)
+			
