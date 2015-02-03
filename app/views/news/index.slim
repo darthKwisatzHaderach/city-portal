@@ -1,6 +1,10 @@
-div class="row" style="padding-top: 80px; min-height: 900px;"
-	div class="medium danger btn" style="float: right"
-	  a href="/tv" Смотреть Заречный ТВ!
+div class="row" style="padding-top: 80px;"
+  center
+	iframe width="800" height="600" src="http://www.youtube.com/embed/videoseries?list=UUg1USJj9q1qIrAzC2TYqoLQ&amp;hl=ru_RU" frameborder="0" allowfullscreen=""	
+
+hr	
+
+div class="row"	
 	- @news.each do |article|
 		div class="media"
 			h4 class="media-heading"

@@ -1,2 +1,0 @@
-class TvController < ApplicationController
-end
