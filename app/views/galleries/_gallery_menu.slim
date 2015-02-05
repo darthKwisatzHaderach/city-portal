@@ -1,0 +1,22 @@
+nav id="sidebar-nav-holder" class="vertical-nav" gumby-fixed="40px" style="padding-top: 80px"
+  	ul id="sidebar-nav"
+		li
+		    = link_to 'Фотографии улиц 2011 год', year_2011_path						
+		li
+			= link_to 'Рождение Заречного', old_zarechny_path						
+		li
+			= link_to 'Заречный с высоты', city_from_above_path											
+		li
+			= link_to 'Белоярская АЭС', baes_gallery_path						
+		li
+			= link_to 'Бульвар Алещенкова', aleschenkova_boulevard_gallery_path						
+		li
+			= link_to 'Карнавал в Заречном: Часть I (подборка 2000 - 2010 года)', carnaval_gallery_part_1_path		
+		li
+			= link_to 'Карнавал в Заречном: Часть II (подборка 2000 - 2010 года)', carnaval_gallery_part_2_path
+		li
+			= link_to 'Карнавал в Заречном: Часть III (подборка 2000 - 2010 года)', carnaval_gallery_part_3_path
+
+script type="text/javascript" charset="utf-8"
+	|var path = '/' + window.location.pathname.substring(1);		
+	|$('ul>li>a[href="' + path + '"]').parent().addClass('active');
