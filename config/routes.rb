@@ -8,7 +8,7 @@ Alpha::Application.routes.draw do
   get 'novosti' => 'news#index'
   get '/novosti/:alias', :to => 'news#show'
 
-  get '/tv', :to => 'tv#index'
+  get '/map', :to => 'map#index'
 
   get '/panoramas', :to => 'panoramas#index'
   get '/panoramas/:path', :to => 'panoramas#show'

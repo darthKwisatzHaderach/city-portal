@@ -1,0 +1,16 @@
+div class="row" style="padding-top: 80px; padding-bottom: 20px; min-height: 900px;"
+	div align="center" class="twelve columns"
+		div id="demoMap" style="height:768px; width:1024px"
+
+script src="js/OpenLayers.js"
+script
+    |map = new OpenLayers.Map("demoMap");
+    |map.addLayer(new OpenLayers.Layer.OSM());
+    |map.zoomToMaxExtent();
+	|var lonLat = new OpenLayers.LonLat(61.316667, 56.800000)
+	|      .transform(
+	|        new OpenLayers.Projection("EPSG:4326"),
+	|        map.getProjectionObject()
+	|      );
+	|var zoom=16;
+	|map.setCenter (lonLat, zoom);		  
