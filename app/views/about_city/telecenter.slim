@@ -1,11 +1,11 @@
-div class="row" style="padding-top: 80px; padding-bottom: 20px; min-height: 900px;"
-	div class="twelve columns"
-		div class="media"
-			h4 align="center" class="media-heading"
+div.row style="padding-top: 80px; padding-bottom: 20px; min-height: 900px;"
+	div.twelve.columns
+		div.media
+			h4.media-heading align="center"
 			  = @one_article.title
-			a class="pull-left" href="#"
-				div class="thumbnail"
+			a.pull-left href="#"
+				div.thumbnail
 					= image_tag "#{@one_article.image}"				
-			div align="justify" class="media-body" style="margin-bottom: 30px"
+			div.media-body align="justify" style="margin-bottom: 30px"
 				= simple_format(@one_article.full_text)
 			
