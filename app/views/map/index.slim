@@ -14,14 +14,21 @@ script
 	|        new OpenLayers.Projection("EPSG:4326"),
 	|        map.getProjectionObject()
 	|      );
-	|var lonLat1 = new OpenLayers.LonLat(61.319200, 56.799200)
+	|var school1 = new OpenLayers.LonLat(61.319200, 56.799200)
 	|      .transform(
 	|        new OpenLayers.Projection("EPSG:4326"),
 	|        map.getProjectionObject()
 	|      );
 	|var zoom=16;
 	|
-	|var markers = new OpenLayers.Layer.Markers("Markers");
-    |map.addLayer(markers); 
-    |markers.addMarker(new OpenLayers.Marker(lonLat1));
+	|var markers = new OpenLayers.Layer.Markers("Markers");	
+    |map.addLayer(markers);     
+    |var marker = new OpenLayers.Marker(school1);
+	|marker.id = "1";	
+    |markers.addMarker(marker);
+    |marker.events.register('mousedown', marker, 
+    |function(evt) { 
+    |    window.location.href = "/panoramas/school1"; OpenLayers.Event.stop(evt); 
+    |	}
+	|);
 	|map.setCenter (lonLat, zoom);		
