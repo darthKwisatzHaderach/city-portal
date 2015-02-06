@@ -1,14 +1,14 @@
-div class="row" style="padding-top: 80px; padding-bottom: 20px; min-height: 900px;"
-	div class="three columns"
-		= render 'gallery_menu'	
+div.row style="padding-top: 80px; padding-bottom: 20px; min-height: 900px;"
+	div.three.columns
+		= render 'gallery_menu'
 
-	div class="nine columns"
-		ul class="gallery clearfix"
-		  - @gallery.each do |image|
-			li class="gallery_li"
+	div.nine.columns
+		ul.gallery.clearfix
+		  - @gallery.each do |image| 
+			li.gallery_li
 			  a href="/images/gallery/#{image.file}" rel="prettyPhoto[gallery2]"
 			    = image_tag "/images/thumbnails/#{image.file}"
-		
+	
 script type="text/javascript" charset="utf-8"
 	|$(document).ready(function(){
 	|$("area[rel^='prettyPhoto']").prettyPhoto();

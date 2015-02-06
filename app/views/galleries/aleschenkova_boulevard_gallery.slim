@@ -1,11 +1,11 @@
-div class="row" style="padding-top: 80px; padding-bottom: 20px; min-height: 900px;"
-	div class="three columns"
+div.row style="padding-top: 80px; padding-bottom: 20px; min-height: 900px;"
+	div.three.columns
 		= render 'gallery_menu'
 
-	div class="nine columns"
-		ul class="gallery clearfix"
+	div.nine.columns
+		ul.gallery.clearfix
 		  - @gallery.each do |image| 
-			li class="gallery_li"
+			li.gallery_li
 			  a href="/images/gallery/#{image.file}" rel="prettyPhoto[gallery2]"
 			    = image_tag "/images/thumbnails/#{image.file}"
 	
