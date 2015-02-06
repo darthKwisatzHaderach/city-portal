@@ -1,7 +1,7 @@
 div.row style="padding-top: 60px; padding-bottom: 20px; min-height: 900px;"	
 	div.twelve.columns align="center"
 		h4 Карта Заречного Свердловской области
-		div#map style="height:768px; width:1024px"
+		div#map style="height:768px; width:1024px; border: 1px solid #222"
 
 script src="js/OpenLayers.js"
 
@@ -14,13 +14,13 @@ script
 	|        new OpenLayers.Projection("EPSG:4326"),
 	|        map.getProjectionObject()
 	|      );
+	|var lonLat1 = new OpenLayers.LonLat(61.319200, 56.799200)
+	|      .transform(
+	|        new OpenLayers.Projection("EPSG:4326"),
+	|        map.getProjectionObject()
+	|      );
 	|var zoom=16;
-	|map.setCenter (lonLat, zoom);		
-	|
 	|var markers = new OpenLayers.Layer.Markers("Markers");
-	|map.addLayer(markers);
-	|var size = new OpenLayers.Size(21,25);
-	|var offset = new OpenLayers.Pixel(-(size.w/2), -size.h);
-	|var icon = new OpenLayers.Icon('http://www.openlayers.org/dev/img/marker.png', size, offset);
-	|markers.addMarker(new OpenLayers.Marker(new OpenLayers.LonLat(61.316667, 56.800000),icon));
-	|markers.addMarker(new OpenLayers.Marker(new OpenLayers.LonLat(61.311667, 56.800000),icon.clone()));
+    |map.addLayer(markers); 
+    |markers.addMarker(new OpenLayers.Marker(lonLat1));
+	|map.setCenter (lonLat, zoom);		
