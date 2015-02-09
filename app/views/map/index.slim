@@ -3,8 +3,6 @@ div.row style="padding-top: 60px; padding-bottom: 20px; min-height: 900px;"
 		h4 Карта Заречного Свердловской области
 		div#map style="height:768px; width:1024px; border: 1px solid #222"
 
-script src="js/OpenLayers.js"
-
 script
 	|map = new OpenLayers.Map("map");
 	|map.addLayer(new OpenLayers.Layer.OSM());
@@ -19,16 +17,28 @@ script
 	|        new OpenLayers.Projection("EPSG:4326"),
 	|        map.getProjectionObject()
 	|      );
+	|var atom = new OpenLayers.LonLat(61.316600, 56.815000)
+	|      .transform(
+	|        new OpenLayers.Projection("EPSG:4326"),
+	|        map.getProjectionObject()
+	|      );
+	|
 	|var zoom=16;
 	|
 	|var markers = new OpenLayers.Layer.Markers("Markers");	
     |map.addLayer(markers);     
-    |var marker = new OpenLayers.Marker(school1);
-	|marker.id = "1";	
-    |markers.addMarker(marker);
-    |marker.events.register('mousedown', marker, 
+    |var marker_school1 = new OpenLayers.Marker(school1);    
+    |markers.addMarker(marker_school1);
+    |var marker_atom = new OpenLayers.Marker(atom);
+    |markers.addMarker(marker_atom);
+    |marker_school1.events.register('mousedown', marker_school1, 
     |function(evt) { 
     |    window.location.href = "/panoramas/school1"; OpenLayers.Event.stop(evt); 
+    |	}
+	|);
+	|marker_atom.events.register('mousedown', marker_atom, 
+    |function(evt) { 
+    |    window.location.href = "/panoramas/Atom"; OpenLayers.Event.stop(evt); 
     |	}
 	|);
 	|map.setCenter (lonLat, zoom);		
