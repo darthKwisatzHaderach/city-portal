@@ -1,7 +1,6 @@
 class AboutCityController < ApplicationController
 
   def index
-    
   end
 
   def city_and_neighborhood
