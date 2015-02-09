@@ -14,4 +14,3 @@
 //= require turbolinks
 //= require modernizr-2.6.2.min
 //= require gumby.min
-//= require_tree .

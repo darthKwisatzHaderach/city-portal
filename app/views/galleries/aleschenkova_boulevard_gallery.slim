@@ -9,6 +9,8 @@ div.row style="padding-top: 80px; padding-bottom: 20px; min-height: 900px;"
 			  a href="/images/gallery/#{image.file}" rel="prettyPhoto[gallery2]"
 			    = image_tag "/images/thumbnails/#{image.file}"
 	
+= javascript_include_tag :galleries
+	
 script type="text/javascript" charset="utf-8"
 	|$(document).ready(function(){
 	|$("area[rel^='prettyPhoto']").prettyPhoto();
