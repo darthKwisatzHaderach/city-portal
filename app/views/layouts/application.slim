@@ -34,28 +34,27 @@ html
         = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true                            
 
     body
-        div#navbar-main-nav.navbar
-            div.row
-        	  a.toggle gumby-trigger="#navbar-main-nav #main-nav" href="#"
-                i.icon-menu
-        	  h1.four.columns.logo
-                a href="/" style="font-size: 30px; color: #fff; font-family: Bad Script,Lobster,Cyreal;" Город Заречный			
-        	  ul#main-nav.eight.columns
-                li 
-                    a href="/novosti" Новости
-                li
-                    a href="/panoramas" Панорамы
-                li
-                    a href="/galleries" Фотографии
-                li
-                    a href="/about-city" История
-                li
-                    a href="/map" Карта
-            div style="height: 1px; background: #D4E2F1"
-
-        = yield
-
-        div.site_footer
+        div.wrapper
+            div#navbar-main-nav.navbar
+                div.row
+            	  a.toggle gumby-trigger="#navbar-main-nav #main-nav" href="#"
+                    i.icon-menu
+            	  h1.four.columns.logo
+                    a href="/" style="font-size: 30px; color: #fff; font-family: Bad Script,Lobster,Cyreal;" Город Заречный			
+            	  ul#main-nav.eight.columns
+                    li 
+                        a href="/novosti" Новости
+                    li
+                        a href="/panoramas" Панорамы
+                    li
+                        a href="/galleries" Фотографии
+                    li
+                        a href="/about-city" История
+                    li
+                        a href="/map" Карта
+                div style="height: 1px; background: #D4E2F1"
+            = yield
+        div.site_footer.footer
             div> style="height: 1px; background: #D4E2F1"
             div.row style="padding-top: 10px"
                 div.twelve.columns style="text-align: center;"

@@ -4,43 +4,4 @@ div.row
 		div#map style="height:768px; width:1024px; border: 1px solid #222"
 
 = javascript_include_tag "OpenLayers.js"
-
-script
-	|map = new OpenLayers.Map("map");
-	|map.addLayer(new OpenLayers.Layer.OSM());
-	|map.zoomToMaxExtent();
-	|var lonLat = new OpenLayers.LonLat(61.316667, 56.800000)
-	|      .transform(
-	|        new OpenLayers.Projection("EPSG:4326"),
-	|        map.getProjectionObject()
-	|      );
-	|var school1 = new OpenLayers.LonLat(61.319200, 56.799200)
-	|      .transform(
-	|        new OpenLayers.Projection("EPSG:4326"),
-	|        map.getProjectionObject()
-	|      );
-	|var atom = new OpenLayers.LonLat(61.316600, 56.815000)
-	|      .transform(
-	|        new OpenLayers.Projection("EPSG:4326"),
-	|        map.getProjectionObject()
-	|      );
-	|
-	|var zoom=16;
-	|
-	|var markers = new OpenLayers.Layer.Markers("Markers");	
-    |map.addLayer(markers);     
-    |var marker_school1 = new OpenLayers.Marker(school1);    
-    |markers.addMarker(marker_school1);
-    |var marker_atom = new OpenLayers.Marker(atom);
-    |markers.addMarker(marker_atom);
-    |marker_school1.events.register('mousedown', marker_school1, 
-    |function(evt) { 
-    |    window.location.href = "/panoramas/school1"; OpenLayers.Event.stop(evt); 
-    |	}
-	|);
-	|marker_atom.events.register('mousedown', marker_atom, 
-    |function(evt) { 
-    |    window.location.href = "/panoramas/Atom"; OpenLayers.Event.stop(evt); 
-    |	}
-	|);
-	|map.setCenter (lonLat, zoom);		
+= javascript_include_tag :map
