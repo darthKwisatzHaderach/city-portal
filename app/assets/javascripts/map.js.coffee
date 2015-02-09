@@ -13,6 +13,9 @@ square_park = new (OpenLayers.LonLat)(61.317600, 56.815000).transform(new (OpenL
 church = new (OpenLayers.LonLat)(61.330620, 56.799060).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
 eternal_flame = new (OpenLayers.LonLat)(61.318700, 56.815000).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
 pancake = new (OpenLayers.LonLat)(61.308900, 56.794400).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
+malahit = new (OpenLayers.LonLat)(61.313900, 56.810000).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
+tahov = new (OpenLayers.LonLat)(61.314700, 56.804700).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
+tir = new (OpenLayers.LonLat)(61.311770, 56.810910).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
 
 zoom = 14
 
@@ -36,6 +39,15 @@ markers.addMarker marker_9_may
 
 marker_pancake = new (OpenLayers.Marker)(pancake)
 markers.addMarker marker_pancake
+
+marker_malahit = new (OpenLayers.Marker)(malahit)
+markers.addMarker marker_malahit
+
+marker_tahov = new (OpenLayers.Marker)(tahov)
+markers.addMarker marker_tahov
+
+marker_tir = new (OpenLayers.Marker)(tir)
+markers.addMarker marker_tir
 
 marker_school1.events.register 'mousedown', marker_school1, (evt) ->
   window.location.href = '/panoramas/school1'    
@@ -66,5 +78,20 @@ marker_pancake.events.register 'mousedown', marker_pancake, (evt) ->
   window.location.href = '/panoramas/Pancake'
   OpenLayers.Event.stop evt
   return
+
+marker_malahit.events.register 'mousedown', marker_malahit, (evt) ->
+  window.location.href = '/panoramas/Malahit'
+  OpenLayers.Event.stop evt
+  return  
+
+marker_tahov.events.register 'mousedown', marker_tahov, (evt) ->
+  window.location.href = '/panoramas/Tahov'
+  OpenLayers.Event.stop evt
+  return  
+
+marker_tir.events.register 'mousedown', marker_tir, (evt) ->
+  window.location.href = '/panoramas/Tir'
+  OpenLayers.Event.stop evt
+  return 
 
 map.setCenter lonLat, zoom
