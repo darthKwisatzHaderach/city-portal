@@ -18,7 +18,6 @@ addMarkerWithLink = (name, lon, lat, link) ->
 		OpenLayers.Event.stop evt
 		return
 
-
 lonLat = new (OpenLayers.LonLat)(61.325000, 56.805000).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
 
 zoom = 14
@@ -37,5 +36,20 @@ addMarkerWithLink('stroitelyam', 61.320400, 56.815500, '/panoramas/stroitelyam')
 addMarkerWithLink('school7', 61.312700, 56.798100, '/panoramas/school7')
 addMarkerWithLink('new_church', 61.320000, 56.808000, '/panoramas/new_church')
 addMarkerWithLink('near_1', 61.320500, 56.799700, '/panoramas/near_1')
+addMarkerWithLink('galaktika', 61.322200, 56.797400, '/panoramas/galaktika')
+addMarkerWithLink('dvor', 61.308000, 56.797800, '/panoramas/dvor')
+addMarkerWithLink('dk_2014', 61.321000, 56.815000, '/panoramas/dk_2014')
+addMarkerWithLink('corner_ll', 61.324900, 56.799000, '/panoramas/corner_ll')
+addMarkerWithLink('between_g_12', 61.320000, 56.796800, '/panoramas/between_g_12')
+addMarkerWithLink('b_in', 61.313100, 56.798800, '/panoramas/b_in')
+addMarkerWithLink('b_entrence', 61.315100, 56.799600, '/panoramas/b_entrence')
+addMarkerWithLink('candle', 61.318900, 56.796800, '/panoramas/12')
+addMarkerWithLink('atom_2013', 61.316100, 56.815000, '/panoramas/AtomLQ')
+addMarkerWithLink('alechenkovaLQ', 61.312600, 56.798600, '/panoramas/AlechenkovaLQ')
+addMarkerWithLink('rock', 61.320500, 56.798800, '/panoramas/rock')
+addMarkerWithLink('stellaLQ', 61.325600, 56.800700, '/panoramas/StellaLQ')
+addMarkerWithLink('flagmanLQ', 61.308800, 56.794300, '/panoramas/FlagmanLQ')
+addMarkerWithLink('kirovskyLQ', 61.315400, 56.799800, '/panoramas/KirovskyLQ')
+addMarkerWithLink('eternalFlameLQ', 61.319000, 56.815000, '/panoramas/EternalFlameLQ')
 
 map.setCenter lonLat, zoom
