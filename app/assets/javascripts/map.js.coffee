@@ -16,6 +16,10 @@ pancake = new (OpenLayers.LonLat)(61.308900, 56.794400).transform(new (OpenLayer
 malahit = new (OpenLayers.LonLat)(61.313900, 56.810000).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
 tahov = new (OpenLayers.LonLat)(61.314700, 56.804700).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
 tir = new (OpenLayers.LonLat)(61.311770, 56.810910).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
+stroitelyam = new (OpenLayers.LonLat)(61.320400, 56.815500).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
+school7 = new (OpenLayers.LonLat)(61.312700, 56.798100).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
+new_church = new (OpenLayers.LonLat)(61.320000, 56.808000).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
+near_1 = new (OpenLayers.LonLat)(61.320500, 56.799700).transform(new (OpenLayers.Projection)('EPSG:4326'), map.getProjectionObject())
 
 zoom = 14
 
@@ -48,6 +52,18 @@ markers.addMarker marker_tahov
 
 marker_tir = new (OpenLayers.Marker)(tir)
 markers.addMarker marker_tir
+
+marker_stroitelyam = new (OpenLayers.Marker)(stroitelyam)
+markers.addMarker marker_stroitelyam
+
+marker_school7 = new (OpenLayers.Marker)(school7)
+markers.addMarker marker_school7
+
+marker_new_church = new (OpenLayers.Marker)(new_church)
+markers.addMarker marker_new_church
+
+marker_near_1 = new (OpenLayers.Marker)(near_1)
+markers.addMarker marker_near_1
 
 marker_school1.events.register 'mousedown', marker_school1, (evt) ->
   window.location.href = '/panoramas/school1'    
@@ -91,6 +107,26 @@ marker_tahov.events.register 'mousedown', marker_tahov, (evt) ->
 
 marker_tir.events.register 'mousedown', marker_tir, (evt) ->
   window.location.href = '/panoramas/Tir'
+  OpenLayers.Event.stop evt
+  return 
+
+marker_stroitelyam.events.register 'mousedown', marker_stroitelyam, (evt) ->
+  window.location.href = '/panoramas/stroitelyam'
+  OpenLayers.Event.stop evt
+  return 
+
+marker_school7.events.register 'mousedown', marker_school7, (evt) ->
+  window.location.href = '/panoramas/school7'
+  OpenLayers.Event.stop evt
+  return 
+
+marker_new_church.events.register 'mousedown', marker_new_church, (evt) ->
+  window.location.href = '/panoramas/new_church'
+  OpenLayers.Event.stop evt
+  return 
+
+marker_near_1.events.register 'mousedown', marker_near_1, (evt) ->
+  window.location.href = '/panoramas/near_1'
   OpenLayers.Event.stop evt
   return 
 
