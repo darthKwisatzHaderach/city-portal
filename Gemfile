@@ -41,6 +41,7 @@ gem 'slim'
 
 group :test do
   gem 'cucumber-rails', :require => false
+  gem 'rspec-rails', '~> 3.0'
   # database_cleaner is not required, but highly recommended
   # gem 'database_cleaner'
 end
