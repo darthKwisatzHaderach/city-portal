@@ -29,8 +29,6 @@ ActiveRecord::Schema.define(version: 20150202082929) do
   end
 
   create_table "galleries", force: true do |t|
-    t.text    "controller"
-    t.integer "item_id"
     t.integer "group"
     t.string  "file"
     t.string  "author"
@@ -48,9 +46,9 @@ ActiveRecord::Schema.define(version: 20150202082929) do
   end
 
   create_table "panoramas", force: true do |t|
-    t.string  "path"
+    t.string  "path",     null: false
     t.integer "year"
-    t.string  "img_path"
+    t.string  "img_path", null: false
     t.string  "name"
   end
 
