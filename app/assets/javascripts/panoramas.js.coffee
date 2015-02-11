@@ -14,7 +14,7 @@ swfobject = do ->
   j = document
   t = navigator
   T = false
-  U = [ h ]
+  U = [h]
   o = []
   N = []
   I = []
@@ -34,7 +34,7 @@ swfobject = do ->
     ae = if Y then /win/.test(Y) else /win/.test(ah)
     ac = if Y then /mac/.test(Y) else /mac/.test(ah)
     af = if /webkit/.test(ah) then parseFloat(ah.replace(/^.*webkit\/(\d+(\.\d+)?).*$/, '$1')) else false
-    X = !+'\ub1'
+    X = !+'\v1'
     ag = [
       0
       0
@@ -106,7 +106,7 @@ swfobject = do ->
             setTimeout arguments.callee, 0
             return
           f()
-          return
+        return
       s f
     return
   d = do ->
